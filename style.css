@@ -1,0 +1,56 @@
+ body {
+            font-family: 'Montserrat', sans-serif; /* Más moderno y premium */
+            background-color: #000000; /* Fondo negro puro para contraste */
+            color: #f0f2f5; /* Blanco-gris suave */
+            line-height: 1.6;
+        }
+        .text-gradient-hero {
+            background-image: linear-gradient(to right top, #6EE7B7, #3B82F6, #9333EA); /* Emerald, Blue, Violet */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        .text-gradient-features {
+            background-image: linear-gradient(to right, #10B981, #06B6D4); /* Emerald to Cyan */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+        .btn-primary {
+            background: linear-gradient(to right, #10B981, #06B6D4); /* Emerald to Cyan */
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(to right, #06B6D4, #10B981); /* Reverse gradient on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(6, 182, 212, 0.4);
+        }
+        .card-bg {
+            background: rgba(18, 24, 39, 0.7); /* Darker, semi-transparent background for cards */
+            -webkit-backdrop-filter: blur(10px); /* Safari support */
+            backdrop-filter: blur(10px); /* Glassmorphism effect */
+            border: 1px solid rgba(30, 41, 59, 0.5); /* Subtle border */
+        }
+        .shadow-glow {
+            box-shadow: 0 0px 50px rgba(6, 182, 212, 0.2), 0 0px 30px rgba(16, 185, 129, 0.2);
+        }
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 2rem;
+        }
+        .image-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);
+            z-index: 1;
+        }
+        .feature-icon {
+            color: #6EE7B7; /* Emerald-300 */
+        }
